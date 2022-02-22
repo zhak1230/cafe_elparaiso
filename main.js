@@ -8,8 +8,8 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    // autoplay: {
-    //     delay: 3000},
+    autoplay: {
+        delay: 2500},
 
     // If we need pagination
     pagination: {
@@ -43,6 +43,19 @@ const poundCakeHeight = poundCake.getBoundingClientRect().height;
 // 높이 알아오기
 document.addEventListener('scroll', ()=>{
 
-  poundCake.style.opacity = window.scrollY /poundCakeHeight +0.12  ;
+  poundCake.style.opacity = window.scrollY /poundCakeHeight +0.1  ;
   // css 값 설정 = 값(상황)에 맞게 설정
+});
+
+
+let menuText = document.querySelector(".menu__tittle");
+window.addEventListener('scroll', function() {
+  let value = window.scrollY;
+  console.log("scrollY", value);
+
+  if(value>100){
+    menuText.style.animation = "text__slide 1s ease-out";
+  } else{
+    menuText.style.animation = "text__disappear 1s ease-out forward";
+  }
 });

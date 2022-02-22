@@ -175,6 +175,8 @@ p {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  /* background: url("https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg")
+    fixed; */
 }
 
 .menu img {
@@ -189,6 +191,13 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: sans-serif;
+  padding-top: 7%;
+  animation: text__slide 2s ease-in-out;
+}
+
+.menu__tittle h2 {
+  left: -100px;
 }
 
 .menu__description {
@@ -197,4 +206,30 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-family: sans-serif;
+}
+
+@keyframes text__slide {
+  from {
+    left: -100px;
+    opacity: 0;
+  }
+
+  to {
+    left: 400px;
+    opacity: 1;
+  }
+}
+
+@keyframes text__disappear{
+  from{
+    left: 400px;
+    opacity: 1;
+  }
+
+  to{
+    left: -100px;
+    opacity: 0;
+  }
+  }
 }
