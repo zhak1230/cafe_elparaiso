@@ -146,6 +146,11 @@ p {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  background: url(imgs/official_photo/goods1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  font-family: sans-serif;
 }
 
 .pound-cake img {
@@ -177,6 +182,10 @@ p {
   padding: 10px;
   /* background: url("https://www.starbucks.co.kr/common/img/main/fav_prod_bg_new.jpg")
     fixed; */
+  background: url(imgs/official_photo/goods3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
 }
 
 .menu img {
@@ -199,13 +208,13 @@ p {
 }
 
 #menu__text.text__slide {
-  animation: text__slide 2s ease-in-out;
+  animation: text__slide 1s ease-in-out;
   margin-left: 0px;
   opacity: 1;
 }
 
 #menu__text.text__slide text__disappear {
-  animation: text__disappear 1s ease-in-out;
+  animation: text__disappear 0.1s ease-out;
 }
 
 @keyframes text__slide {
@@ -230,4 +239,33 @@ p {
     left: -100px;
     opacity: 0;
   }
+}
+
+#sns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: url(imgs/official_photo/goods8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+}
+
+.sns__instagram img {
+  width: 100%;
+}
+
+.sns__btn {
+  padding: 0.5rem 0.75rem;
+  border: 0.125rem solid #ea1319;
+  border-radius: var(--size-border-radius);
+  cursor: pointer;
+  margin: 3%;
+}
+
+.sns__btn button {
+  margin-bottom: 3px;
+  color: #000000;
 }

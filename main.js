@@ -62,10 +62,14 @@ document.addEventListener('scroll', ()=>{
 
 
 const menuText = document.querySelector('#menu__text');
+const menuImg = document.querySelector('#Menu');
+const menuImgHeight = menuImg.getBoundingClientRect().bottom;
 document.addEventListener('scroll', () => {
   let windowHeight = window.scrollY;
   console.log("scrollY", windowHeight);
-  if (windowHeight > 900) {
+  console.log("scrollY", menuImgHeight);
+  // if (windowHeight > menuImgHeight ) {
+    if (windowHeight > 1100 ) {
     menuText.classList.add('text__slide');
   } else {
     menuText.classList.remove('text__slide');
