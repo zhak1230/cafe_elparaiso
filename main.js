@@ -48,14 +48,26 @@ document.addEventListener('scroll', ()=>{
 });
 
 
-let menuText = document.querySelector(".menu__tittle");
-window.addEventListener('scroll', function() {
-  let value = window.scrollY;
-  console.log("scrollY", value);
+// let menuText = document.querySelector(".menu__tittle h2");
+// window.addEventListener('scroll', function() {
+//   let value = window.scrollY;
+//   console.log("scrollY", value);
 
-  if(value>100){
-    menuText.style.animation = "text__slide 1s ease-out";
-  } else{
-    menuText.style.animation = "text__disappear 1s ease-out forward";
+//   if(value < 900){
+//     menuText.style.animation = "text__disappear 1s ease-out forward";
+//   } else{
+//     menuText.style.animation = "text__slide 1s ease-out";
+//   }
+// });
+
+
+const menuText = document.querySelector('#menu__text');
+document.addEventListener('scroll', () => {
+  let windowHeight = window.scrollY;
+  console.log("scrollY", windowHeight);
+  if (windowHeight > 900) {
+    menuText.classList.add('text__slide');
+  } else {
+    menuText.classList.remove('text__slide');
   }
 });
