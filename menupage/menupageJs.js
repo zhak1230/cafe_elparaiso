@@ -6,7 +6,7 @@ $('document').ready(function () {
     direction: 'horizontal',
     loop: true,
     autoplay: {
-      delay: 2500,
+      delay: 5000,
     },
 
     // If we need pagination
