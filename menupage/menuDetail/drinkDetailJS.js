@@ -1,10 +1,10 @@
 'use strict';
 
 // Projects
-const workBtnContainer = document.querySelector('.work__categories');
-const projectContainer = document.querySelector('.work__projects');
+const drinkBtnContainer = document.querySelector('.drink__categories');
+const projectContainer = document.querySelector('.drink__projects');
 const projects = document.querySelectorAll('.project');
-workBtnContainer.addEventListener(`click`, (e) => {
+drinkBtnContainer.addEventListener(`click`, (e) => {
   const filter =
     event.target.dataset.filter || event.target.parentNode.dataset.filter;
   // category__btn 아래에 있는 span에 적용X(dataset이 미적용) --> parent 값으로 출력.

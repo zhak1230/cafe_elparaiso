@@ -24,8 +24,8 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="drinkDetailStyle.css" />
-    <script src="drinkDetailJS.js" defer></script>
+    <link rel="stylesheet" href="/menupage/menuDetail/drinkDetailStyle.css" />
+    <script src="/menupage/menuDetail/drinkDetailJS.js" defer></script>
   </head>
   <body>
     <!-- navbar -->
@@ -49,18 +49,16 @@
     <!-- Work -->
     <section id="drink__page" class="section">
       <div class="section__cotainer">
-        <h1>My Work</h1>
-        <h3>Projects</h3>
-        <div class="work__categories">
-          <button class="categorry__btn selected" data-filter="*">All</button>
-          <button class="categorry__btn" data-filter="front-end">Coffee</button>
-          <button class="categorry__btn" data-filter="back-end">Jucie</button>
-          <button class="categorry__btn" data-filter="mobile">Tea</button>
+        <div class="drink__categories">
+          <button class="category__btn selected" data-filter="*">All</button>
+          <button class="category__btn" data-filter="Coffee">Coffee</button>
+          <button class="category__btn" data-filter="Jucie">Jucie</button>
+          <button class="category__btn" data-filter="Tea">Tea</button>
         </div>
 
         <div class="drink__container">
-          <div class="work__projects">
-            <div class="project" target="blank" data-type="front-end">
+          <div class="drink__projects">
+            <div class="project" target="blank" data-type="Coffee">
               <img
                 class="project__img"
                 src="/imgs/photo/음료메뉴-1.png"
@@ -73,124 +71,127 @@
               <div class="drink__name">아메리카노</div>
             </div>
 
-            <a
-              href="https://www.instagram.com/p/CX2wI1ep49j/"
-              class="project"
-              target="blank"
-              data-type="front-end"
-            >
+            <div class="project" target="blank" data-type="Coffee">
               <img
                 class="project__img"
                 src="/imgs/photo/음료메뉴-2.png"
-                alt="detail page 1"
+                alt="파라이소라떼"
               />
               <div class="poject__description">
-                <h3>Instagram detail page 1</h3>
-                <span>SNS Marketing detail page 1</span>
+                <h3>
+                  달달한 오렌지 맛과 스페셜 라떼의 맛을 함께 즐길 수 있는 음료
+                </h3>
+                <span>9,000원</span>
               </div>
-            </a>
+              <div class="drink__name">파라이소라떼</div>
+            </div>
 
-            <a
-              href="https://www.instagram.com/p/CX2vICephaV/"
-              class="project"
-              target="blank"
-              data-type="front-end"
-            >
+            <div class="project" target="blank" data-type="Jucie">
               <img
                 class="project__img"
                 src="/imgs/photo/음료메뉴-3.png"
-                alt="detail page 2"
+                alt="자몽에이드"
               />
               <div class="poject__description">
-                <h3>Instagram detail page 2</h3>
-                <span>SNS Marketing detail page 2</span>
+                <h3>청량하고 상큼한 자몽의 맛, 파라이소 수제청 에이드</h3>
+                <span>8,500원</span>
               </div>
-            </a>
+              <div class="drink__name">자몽 에이드</div>
+            </div>
 
-            <a
-              href="https://www.instagram.com/p/CX2uxqspLi7/"
-              class="project"
-              target="blank"
-              data-type="back-end"
-            >
+            <div class="project" target="blank" data-type="Jucie">
               <img
                 class="project__img"
                 src="/imgs/photo/음료메뉴-4.png"
-                alt="detail page 3"
+                alt="오미자 에이드"
               />
               <div class="poject__description">
-                <h3>Instagram detail page 3</h3>
-                <span>SNS Marketing detail page 3</span>
+                <h3>건강식 오미자와 <br />에이드가 만나다</h3>
+                <span>10,000원</span>
               </div>
-            </a>
+              <div class="drink__name">오미자 에이드</div>
+            </div>
 
-            <a
-              href="https://www.instagram.com/p/CXNYB7Sp1t0/"
-              class="project"
-              target="blank"
-              data-type="back-end"
-            >
+            <div class="project" target="blank" data-type="Jucie">
               <img
                 class="project__img"
-                src="/imgs/photo/음료메뉴-1.png"
-                alt="detail page 4"
+                src="/imgs/photo/음료메뉴-5.png"
+                alt="망고 스무디"
               />
               <div class="poject__description">
-                <h3>Instagram detail page 4</h3>
-                <span>SNS Marketing detail page 4</span>
+                <h3>
+                  상큼하고 시원한<br />
+                  '망고 요거트 스무디'
+                </h3>
+                <span>9,000원</span>
               </div>
-            </a>
+              <div class="drink__name">망고 스무디</div>
+            </div>
 
-            <a
-              href="https://www.instagram.com/p/CXNX7SmJHh8/"
-              class="project"
-              target="blank"
-              data-type="back-end"
-            >
+            <div class="project" target="blank" data-type="Tea">
               <img
                 class="project__img"
-                src="/imgs/photo/음료메뉴-2.png"
-                alt="detail page 5"
+                src="/imgs/photo/음료메뉴-6.png"
+                alt="백향과 티"
               />
               <div class="poject__description">
-                <h3>Instagram detail page 5</h3>
-                <span>SNS Marketing detail page 5</span>
+                <h3>상큼한 백향과 <br />히비스커스를 만나다.</h3>
+                <span>9,000원</span>
               </div>
-            </a>
+              <div class="drink__name">백향과 티</div>
+            </div>
 
-            <a
-              href="https://www.instagram.com/p/CXNXu_-pNBc/"
-              class="project"
-              target="blank"
-              data-type="mobile"
-            >
+            <div class="project" target="blank" data-type="Tea">
               <img
                 class="project__img"
-                src="/imgs/photo/음료메뉴-3.png"
-                alt="detail page 6"
+                src="/imgs/photo/음료메뉴-7.png"
+                alt="히비스커스 리쉬티"
               />
               <div class="poject__description">
-                <h3>Instagram detail page 6</h3>
-                <span>SNS Marketing detail page 6</span>
+                <h3>최고급 프리미엄 히비스커스로 만든 유기농 차.</h3>
+                <span>8,500원</span>
               </div>
-            </a>
+              <div class="drink__name">히비스커스 리쉬티</div>
+            </div>
 
-            <a
-              href="https://www.instagram.com/p/CXBBYvcJI3l/"
-              class="project"
-              target="blank"
-              data-type="mobile"
-            >
+            <div class="project" target="blank" data-type="Tea">
               <img
                 class="project__img"
-                src="/imgs/photo/음료메뉴-4.png"
-                alt="detail page 7"
+                src="/imgs/photo/음료메뉴-7.png"
+                alt="히비스커스"
               />
               <div class="poject__description">
-                <h3>Instagram detail page 7</h3>
-                <span>SNS Marketing detail page 7</span>
+                <h3>최고급 프리미엄 히비스커스로 만든 유기농 차.</h3>
+                <span>8,500원</span>
               </div>
-            </a>
+              <div class="drink__name">히비스커스</div>
+            </div>
+
+            <div class="project" target="blank" data-type="Tea">
+              <img
+                class="project__img"
+                src="/imgs/photo/음료메뉴-8.png"
+                alt="유주피치 그린"
+              />
+              <div class="poject__description">
+                <h3>최고급 프리미엄 유주피치로 만든 유기농 차.</h3>
+                <span>8,500원</span>
+              </div>
+              <div class="drink__name">유주피치 그린</div>
+            </div>
+
+            <div class="project" target="blank" data-type="Tea">
+              <img
+                class="project__img"
+                src="/imgs/photo/음료메뉴-9.png"
+                alt="스트로베리 툴시"
+              />
+              <div class="poject__description">
+                <h3>최고급 프리미엄 스트로베리 툴시로 만든 유기농 차.</h3>
+                <span>8,500원</span>
+              </div>
+              <div class="drink__name">스트로베리 툴시</div>
+            </div>
           </div>
         </div>
       </div>
