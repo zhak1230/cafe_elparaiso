@@ -106,10 +106,15 @@ p {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0.5rem;
+  padding: 16px;
   background-color: none;
-  color: crimson;
+  color: #e7141a;
   z-index: 100;
+}
+
+#navbar.navbar--dark {
+  background-color: rgb(233, 233, 233);
+  padding: 8px;
 }
 
 .navbar__logo img {
@@ -122,17 +127,37 @@ p {
 
 .navbar__menu {
   display: flex;
+  width: 65 * 5px;
 }
 
 .navbar__menu__item {
+  width: 100%;
   padding: 0.5rem 0.75rem;
   border: 0.063rem solid transparent;
   border-radius: var(--size-border-radius);
   cursor: pointer;
+  font-family: sans-serif;
 }
 
 .navbar__menu__item:hover {
   border-color: var(--color-white);
+}
+
+/* Toggle */
+.navbar__toggle-btn {
+  position: absolute;
+  /* 기존 자리에서 빠져야 함 */
+  top: 15px;
+  right: 10px;
+  font-size: 24px;
+  color: #e7141a;
+  display: none;
+  /* 평소에 보여지면 안됨
+    opacity 사용시 보이진 않으나 클릭이 됨 */
+}
+
+#navbar.navbar--dark .navbar__toggle-btn {
+  top: 12px;
 }
 
 .swiper {
@@ -245,7 +270,7 @@ p {
 .menu__btn {
   margin: 7% 0 3% 0;
   padding: 0.3rem 0.75rem;
-  border: 0.125rem solid #ea1319;
+  border: 0.125rem solid #e7141a;
   border-radius: var(--size-border-radius);
   cursor: pointer;
 }
@@ -274,7 +299,7 @@ p {
 
 .sns__btn {
   padding: 0.5rem 0.75rem;
-  border: 0.125rem solid #ea1319;
+  border: 0.125rem solid #e7141a;
   border-radius: var(--size-border-radius);
   cursor: pointer;
   margin: 3%;
@@ -344,4 +369,58 @@ p {
 
 .footer__description li {
   padding: 1% 1% 1% 0;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #navbar.navbar--dark {
+    padding: 10px;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
+  }
+}
+
+/* Back to top */
+#back-to-top {
+  position: fixed;
+  bottom: 3em;
+  right: 2em;
+  background-color: var(--color-white);
+  border: none;
+  color: #e7141a;
+  border-radius: var(--size-border-radius);
+  padding: 2.3%;
+  text-transform: uppercase;
+  transition: all var(--animation-duration) ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: var(--weight-bold);
+  font-size: var(--font-micro);
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#back-to-top.visible {
+  /* 클래스명 비져블 추가시 보임 효과 */
+  opacity: 1;
+  pointer-events: auto;
 }
